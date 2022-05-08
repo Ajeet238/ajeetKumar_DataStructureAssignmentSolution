@@ -5,10 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
-//3
-//1 2 3 8 9 10 4 5 7 6
-//[1,2,3,4,5]
-//[2,1]
 
 public class Construction {
 	public static void orderOfConstruction(int arr[], int totalFloor) {
@@ -16,7 +12,7 @@ public class Construction {
 		int temp = totalFloor;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == temp) {
-				System.out.print("Day " + (i + 1) + " ");
+				System.out.println("Day:" + (i + 1) + " ");
 				System.out.print(arr[i] + " ");
 
 				temp--;
@@ -33,15 +29,14 @@ public class Construction {
 				} 
 
 				Object[] a = li.toArray();
-				System.out.println("Returned List: " + Arrays.toString(a));
+				
 				System.out.println(" ");
 
 			} else {
 				li.add(arr[i]);
 				Collections.sort(li, Collections.reverseOrder());
 				Object[] a = li.toArray();
-				System.out.println("Returned List: " + Arrays.toString(a));
-				System.out.println("Day " + (i + 1) + " ");
+				System.out.println("Day:" + (i + 1) + " ");
 			}
 
 		}
@@ -61,11 +56,4 @@ public class Construction {
 	}
 
 }
-/* 
- * n = 5
- * 5 1 4 3 2
- * 1 
- * 
- *  
- *  
- */
+ 
